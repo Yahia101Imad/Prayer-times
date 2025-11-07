@@ -5,22 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prayer-times</title>
     <script src="../node_modules/axios/dist/axios.js"></script>
-    <script src="../main.js"></script>
     <link rel="stylesheet" href="./output.css">
 </head>
 <body>
     <section>
-        <p>30-10-2025</p>
-        <label>Choose address :</label>
-        <select id="addresses"></select>
+        <p id="day-date">30-10-2025</p>
+        <label>Choose city :</label>
+        <select id="cities-list"></select>
     </section>
     <section>
-        <div><p>Fajr</p><p>05:30</p></div>
-        <div><p>Sunrise</p><p>05:30</p></div>
-        <div><p>Dhuhr</p><p>05:30</p></div>
-        <div><p>Asr</p><p>05:30</p></div>
-        <div><p>Maghrib</p><p>05:30</p></div>
-        <div><p>Isha</p><p>05:30</p></div>
+        <div><p>Fajr</p><p id="fajr"></p></div>
+        <div><p>Sunrise</p><p id="sunrise"></p></div>
+        <div><p>Dhuhr</p><p id="dhuhr"></p></div>
+        <div><p>Asr</p><p id="asr"></p></div>
+        <div><p>Maghrib</p><p id="maghrib"></p></div>
+        <div><p>Isha</p><p id="isha"></p></div>
     </section>
+
+    <script src="./script.js" defer></script>
 </body>
 </html>
